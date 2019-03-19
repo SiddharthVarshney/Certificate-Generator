@@ -1,0 +1,34 @@
+event:
+  name: "National Social Summit 2019"
+  url: "http://www.nationalsocialsummit.org/"
+site:
+  lang: "en"
+  title: "Certificates for National Social Summit 2019"
+  eventLogo: "static/images/event_logo.png"
+  index:
+    message: "Instructions here"
+    emailPlaceholder: "registered@email.com"
+    inputLabel: "Email"
+    submit: "Generate"
+certificate:
+  eventLogo: "static/images/event_logo.png"
+  iitrLogo: "static/images/iitr_logo.png"
+  nssLogo: "static/images/nss_logo.png"
+  background: "static/images/background.png"
+  header: "CERTIFICATE"
+  type1: "OF PARTICIPATION"
+  textLine1: "National Service Scheme,IIT Roorkee recognises and appriciates the participation of"
+  textLine2: "during the National Social Summitheld between February 8th - 10th 2019."
+routes:
+  certificate: certificate
+errors:
+  error: "<strong>Error:</strong> %message%"
+  missingEmail: "Missing email address!"
+  invalidEmail: "Invalid email address!"
+  emailNoExists: "The email address does not exists!"
+  notAttended: "You did not attended to this Summit!"
+  csvError: "An error occurred while reading the CSV file!"
+  csrfError: "Cheatin' huh?"
+  error404: "404: Page not Found"
+  error500: "500: Internal Server Error"
+csv: csv/sample.csv

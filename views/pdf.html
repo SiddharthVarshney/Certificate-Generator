@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ event.name }}</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{{baseUrl}}}/static/css/certificate.css"
+    />
+  </head>
+
+  <body>
+    <div class="content-logos ">
+
+        {{#certificate.nssLogo}}
+        <img
+          class="logo-event"
+          src="{{{baseUrl}}}/{{{certificate.nssLogo}}}"
+          alt="{{ event.name }}"
+        />
+        {{/certificate.nssLogo}}
+
+        {{#certificate.iitrLogo}}
+        <img
+          class="logo-event"
+          src="{{{baseUrl}}}/{{{certificate.iitrLogo}}}"
+          alt="{{ event.name }}"
+        />
+        {{/certificate.iitrLogo}}
+
+        {{#certificate.eventLogo}}
+        <img
+          class="logo-event"
+          src="{{{baseUrl}}}/{{{certificate.eventLogo}}}"
+          alt="{{ event.name }}"
+        />
+        {{/certificate.eventLogo}}
+    </div>
+    <div class="content">
+      <div class="inner-content">
+        <h1>{{{certificate.header}}}</h1>
+        <p>{{{certificate.type1}}}</p>
+        <p>{{{certificate.textLine1}}}</p>
+        <p>
+          <u>{{ attendee.first_name }} {{ attendee.last_name }}</u>
+        </p>
+        <p>{{{certificate.textLine2}}}</p>
+      </div>
+    </div>
+
+    <div class="content-signature">
+      
+    </div>
+  </body>
+</html>
