@@ -6,7 +6,7 @@ site:
   title: "Certificates for National Social Summit 2019"
   eventLogo: "static/images/event_logo.png"
   index:
-    message: "Instructions here"
+    message: "Please enter your REGISTERED EMAIL address"
     emailPlaceholder: "registered@email.com"
     inputLabel: "Email"
     submit: "Generate"
@@ -15,6 +15,7 @@ certificate:
   iitrLogo: "static/images/iitr_logo.png"
   nssLogo: "static/images/nss_logo.png"
   background: "static/images/background.png"
+  divider: "static/images/divider.png"
   header: "CERTIFICATE"
   type1: "OF PARTICIPATION"
   textLine1: "National Service Scheme,IIT Roorkee recognises and appriciates the participation of"
