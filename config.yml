@@ -32,4 +32,4 @@ errors:
   csrfError: "Cheatin' huh?"
   error404: "404: Page not Found"
   error500: "500: Internal Server Error"
-csv: csv/sample.csv
+csv: csv/participant-list.csv
