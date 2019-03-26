@@ -14,6 +14,8 @@ certificate:
   eventLogo: "static/images/event_logo.png"
   iitrLogo: "static/images/iitr_logo.png"
   nssLogo: "static/images/nss_logo.png"
+  signature1 : "static/images/Nishank.png"
+  signature2 : "static/images/Yash.png"
   background: "static/images/background.png"
   divider: "static/images/divider.png"
   header: "CERTIFICATE"
