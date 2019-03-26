@@ -1,6 +1,3 @@
 # General
 node_modules/
 
-# CSV
-*.csv
-!csv/sample.csv
