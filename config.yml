@@ -18,8 +18,8 @@ certificate:
   divider: "static/images/divider.png"
   header: "CERTIFICATE"
   type1: "OF PARTICIPATION"
-  textLine1: "National Service Scheme,IIT Roorkee recognises and appriciates the participation of"
-  textLine2: "during the National Social Summitheld between February 8th - 10th 2019."
+  textLine1: "National Service Scheme, IIT Roorkee recognises and appreciates the participation of"
+  textLine2: "during the National Social Summit held between February 8th - 10th 2019."
 routes:
   certificate: certificate
 errors:

@@ -57,34 +57,33 @@
       />
       {{/certificate.eventLogo}}
     </div>
-    <div class="content">
-      <div class="inner-content">
-        <h1>{{{certificate.header}}}</h1>
-        <h5>{{{certificate.type1}}}</h5>
-        <p>{{{certificate.textLine1}}}</p>
-        <p>
-          <u>{{ attendee.first_name }} {{ attendee.last_name }}</u>
-        </p>
-        <p>{{{certificate.textLine2}}}</p>
+    <div class="inner-content">
+      <h1>{{{certificate.header}}}</h1>
+      <h5>{{{certificate.type1}}}</h5>
+      <p>{{{certificate.textLine1}}}</p>
+      <p style="font-weight:800 ;color: black">
+        {{ attendee.first_name }} {{ attendee.last_name }}
+      </p>
+      <p>{{{certificate.textLine2}}}</p>
 
       <div class="signature-flex">
         <div class="signature">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/9/91/Signature_example.png"
-            alt
-          />
+          <div class="image">
+            <img
+              src="https://goo.gl/v3wZ9L"
+              alt
+            />
+            <p>Sample text</p>
+          </div>
         </div>
+
         <div class="signature">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/9/91/Signature_example.png"
-            alt
-          />
-        </div>
-        <div class="signature">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/9/91/Signature_example.png"
-            alt
-          />
+          <div class="image">
+            <img
+              src="https://goo.gl/akZPXU"
+              alt
+            />
+          </div>
         </div>
       </div>
     </div>
