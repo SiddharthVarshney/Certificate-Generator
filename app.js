@@ -8,7 +8,7 @@ var express         = require('express');
 var expressPDF      = require('express-pdf');
 var findInCSV       = require('find-in-csv');
 var fs              = require('fs');
-var isEmail         = require('isemail');
+// var isEmail         = require('isemail');
 var mustache        = require('mustache');
 var mustacheExpress = require('mustache-express');
 var path            = require('path');
@@ -62,7 +62,7 @@ app.get('/', csrfProtection, function (req, res) {
 app.post('/' + config.routes.certificate, parseForm, csrfProtection, function (req, res) {
   var templatePath = path.resolve(__dirname, './views/pdf.html');
   var csv          = new findInCSV(path.resolve(__dirname, './' + config.csv));
-  var email        = req.body.email;
+  var id        = req.body.id;
   var args         = {
     baseUrl     : req.protocol + '://' + req.get('host'),
     certificate : config.certificate,
@@ -70,21 +70,21 @@ app.post('/' + config.routes.certificate, parseForm, csrfProtection, function (r
   };
 
   // Validate email
-  try {
-    if ('' === email) {
-      throw 'missingEmail';
+    try {
+      if ('' === id) {
+      throw 'missingId';
     }
-    if (!isEmail.validate(email)) {
-      throw 'invalidEmail';
-    }
+    // if (!isEmail.validate(id)) {
+    //   throw 'invalidId';
+    // }
   } catch(e) {
     res.redirect('/?error=' + e);
   }
 
   // Find email in CSV
-  csv.get({'email': email}, function (result) {
+  csv.get({'id': id}, function (result) {
     if (!result) {
-      res.redirect('/?error=emailNoExists');
+      res.redirect('/?error=idNoExists');
     }
 
     // Set attendee args

@@ -6,8 +6,8 @@ site:
   title: "Certificates for National Social Summit 2019"
   eventLogo: "static/images/event_logo.png"
   index:
-    message: "Please enter your REGISTERED EMAIL address"
-    emailPlaceholder: "registered@email.com"
+    message: "Please enter your REGISTERED ID"
+    emailPlaceholder: "Will be 7 digit id"
     inputLabel: "Email"
     submit: "Generate"
 certificate:
@@ -29,9 +29,12 @@ errors:
   missingEmail: "Missing email address!"
   invalidEmail: "Invalid email address!"
   emailNoExists: "The email address does not exists!"
+  missingId: "Missing id address!"
+  invalidId: "Invalid id address!"
+  idNoExists: "The id does not exists!"
   notAttended: "You did not attended to this Summit!"
   csvError: "An error occurred while reading the CSV file!"
   csrfError: "Cheatin' huh?"
   error404: "404: Page not Found"
   error500: "500: Internal Server Error"
-csv: csv/participant-list.csv
+csv: csv/sample.csv
